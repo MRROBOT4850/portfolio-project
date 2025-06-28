@@ -8,7 +8,9 @@ import profilePhoto from './shivam.jpeg';
 
 export default function Header({ githubUsername, linkedinUsername }) {
   return (
-    <Box
+    <>
+      <br></br>
+    <Box id="about"
       sx={{
         textAlign: "center",
         mb: 8,
@@ -97,5 +99,6 @@ export default function Header({ githubUsername, linkedinUsername }) {
         </Button>
       </Stack>
     </Box>
+    </>
   );
 }
