@@ -4,7 +4,7 @@ import { Box, Typography, Divider } from "@mui/material";
 const education = [
   {
     institution: "Moradabad Institute of Technology ",
-    degree: "Masters of Computer Applications",
+    degree: "Master of Computer Applications",
     year: "2024- Pursuing",
   },
   {
