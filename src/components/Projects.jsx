@@ -25,6 +25,12 @@ const techIconMap = {
 };
 
 const projects = [
+   {
+    title: "FixItNow",
+    description: "Backend for the platform in which users to request services and workers to accept or reject jobs .",
+    technologies: ["Node.js", "Express.js", "MongoDB", "Geocoder"],
+    website: "https://fixitnow-backend-d40h.onrender.com/api-docs/",
+  },
   {
     title: "Anonymous Chat Room",
     description: "WebSocket chat room (anonymous) using Express.js, no DB.",
@@ -33,7 +39,7 @@ const projects = [
   },
   {
     title: "Movie App",
-    description: "React app powered by TMDB API.",
+    description: "Fullstack Web-app powered by TMDB API and MongoDB.",
     technologies: ["React", "Material-UI"],
     website: "https://movie-maniacs.vercel.app/",
   },
@@ -43,12 +49,7 @@ const projects = [
     technologies: ["React", "Material-UI", "Crypto-Js"],
     website: "https://cipher-visualization-lab.vercel.app",
   },
-  {
-    title: "FixItNow",
-    description: "Backend for the platform in which users to request services and workers to accept or reject jobs .",
-    technologies: ["Node.js", "Express.js", "MongoDB", "Geocoder"],
-    website: "https://fixitnow-backend-d40h.onrender.com/api-docs/",
-  },
+ 
 ];
 
 export default function Projects() {
