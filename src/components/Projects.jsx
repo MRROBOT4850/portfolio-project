@@ -11,7 +11,7 @@ import {
 import {
   SiReact, SiRedux, SiExpress, SiMongodb, SiMysql, SiNodedotjs
 } from "react-icons/si";
-import { MdWidgets } from "react-icons/md";
+import { MdWidgets, MdLocationOn } from "react-icons/md";
 
 const techIconMap = {
   React: <SiReact size={18} color="#61dafb" />,
@@ -21,6 +21,7 @@ const techIconMap = {
   MongoDB: <SiMongodb size={18} color="#4DB33D" />,
   SQL: <SiMysql size={18} color="#00758f" />,
   "Node.js": <SiNodedotjs size={18} color="#3c873a" />,
+  Geocoder: <MdLocationOn size={18} color="#61dafb" />, // simple icon
 };
 
 const projects = [
@@ -39,14 +40,14 @@ const projects = [
   {
     title: "Encryption Visualization Lab",
     description: "Visual AES, Caesar, RSA encryption demos.",
-    technologies: ["React", "Material-UI","Crypto-Js"],
+    technologies: ["React", "Material-UI", "Crypto-Js"],
     website: "https://cipher-visualization-lab.vercel.app",
   },
   {
-    title: "Code Compilation with AI",
-    description: "AI-powered code compile website using Redux.",
-    technologies: ["React", "Redux", "Material-UI"],
-    website: "#projects",
+    title: "FixItNow",
+    description: "Backend for the platform in which users to request services and workers to accept or reject jobs .",
+    technologies: ["Node.js", "Express.js", "MongoDB", "Geocoder"],
+    website: "https://fixitnow-backend-d40h.onrender.com/api-docs/",
   },
 ];
 
@@ -65,7 +66,6 @@ export default function Projects() {
         Projects
       </Typography>
 
-      {/* Center the grid container */}
       <Box
         sx={{
           display: "flex",
@@ -122,6 +122,9 @@ export default function Projects() {
                         backgroundColor: "#2c2c3c",
                         color: "#bb86fc",
                         fontWeight: "bold",
+                        "&:hover": {
+                          backgroundColor: "#3c2c4f",
+                        },
                       }}
                     />
                   ))}
@@ -141,9 +144,8 @@ export default function Projects() {
                       color: "#121212",
                     },
                   }}
-                 
                 >
-                {title==="Code Compilation with AI"?("Under-Development"):("Visit Website")}
+                  Visit Website
                 </Button>
               </CardActions>
             </Card>

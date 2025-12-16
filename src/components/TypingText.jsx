@@ -5,11 +5,14 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 export default function TypingText() {
 const [text] = useTypewriter({
   words: [
-    "Full Stack MERN Developer.",
-    "Building seamless UIs with React & Material-UI.",
-    "Creating robust APIs with Node.js & Express.",
-    "Working with MongoDB and SQL databases.",
-  ],
+  "Deploying web applications on Azure.",
+  "Automating CI/CD pipelines with Docker & GitHub Actions.",
+  "Full Stack MERN Developer.",
+  "Building seamless, responsive UIs with React & Material-UI.",
+  "Developing secure and scalable backend APIs using Node.js & Express.",
+  "Managing and working with MongoDB and SQL databases.",
+]
+,
   loop: 0,
   delaySpeed: 2000,
 });
@@ -38,9 +41,9 @@ const [text] = useTypewriter({
           lineHeight: 1.5,
         }}
       >
-        Passionate about crafting clean, scalable, and efficient full-stack web applications. 
-        Dedicated to continuous learning and delivering quality solutions that make a difference. 
-        Looking forward to contributing my skills to dynamic teams and exciting projects.
+     Passionate about building and deploying full-stack web apps on Azure, with hands-on experience in Docker and CI/CD with GitHub Actions.
+    
+    Successfully deployed 4 web applications, delivering scalable, cloud-native solutions with a focus on automation and quality
       </Typography>
     </>
   );

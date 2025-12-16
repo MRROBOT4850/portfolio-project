@@ -18,7 +18,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 
-export default function Footer() {
+export default function Footer(linkedinUsername ) {
   const theme = useTheme();
   const isLargeScreen = useMediaQuery(theme.breakpoints.up("md"));
 
@@ -88,7 +88,7 @@ export default function Footer() {
             </Tooltip>
             <Tooltip title="LinkedIn">
               <IconButton
-                href="https://linkedin.com/shivam-chaudhary-dev"
+                href={`https://linkedin.com/in/${linkedinUsername}`}
                 target="_blank"
                 rel="noopener"
                 sx={{ color: "#bb86fc", "&:hover": { color: "#e0b3ff" } }}

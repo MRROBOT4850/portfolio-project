@@ -23,7 +23,7 @@ function App() {
         <Tools />
          <Projects /> 
         <Education />
-        <Footer/>
+        <Footer linkedinUsername={linkedinUsername}/>
       </Container>
     </Box>
     </>
